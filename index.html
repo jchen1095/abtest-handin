@@ -50,7 +50,7 @@
             <h3>Analysis</h3>
             <p>The p-value is 0.41986, which is much greater than a p-value of 0.05, thus we know that any differences in measurements of time spent on Version A and Version B are not statistically significant. For example, the average time spent on Version A is 22,324 milliseconds, and for Version B it is 24,511 milliseconds. According to the high p-value, these two averages are not very different.</p>
             <h3>Conclusion</h3>
-            <p>Since the change in average time spent on page for Version A and Version B are not statistically different, we fail to reject the null hypothesis.</p>
+            <p>Since the change in average time spent on page for Version A and Version B are not statistically different, we fail to reject the null hypothesis. Moreover, it is interesting that the average time spent on Version B was slightly longer than the average time spent for Version A. This could imply that differences in website versions impact user experience, but the p-values suggest that the differences are not statistically significant enough to provide sound evidence for this conclusion.</p>
             <h2>Mouse Move Distance</h2>
             <h3>Reason for Type of Statistical Test</h3>
             <p>We are interested in the specific/exact change of average mouse move distance on both page versions, so we need a two-tailed t-test to calculate and analyze the exact differences between the two measurements being compared.</p>
@@ -61,10 +61,15 @@
         </section> 
         <h2>Summary Statistics</h2>
         <section id="Summary Statistics">
-        <p></p>
-        </section> 
+        <p>I collected around 23-28 data points, with 23 data points for Version A and 28 data points for Version B. Because the dataset sizes were similar, I do not believe they were imbalanced in a way that would make the metrics measured and analyzed less sound.</p>
+        <p>The averages for time spent was around 22324 milliseconds for Version A and 24511 milliseconds for Version B. It is interesting that the average time spent was slightly higher for Version B, which could imply that the Version B website was more difficult for users to use, however the p-value is less than 0.05 which means the difference between average time spent is not statistically significant enough to conclude this.</p>
+        <p>Moreover, the variance of both Version A and Version B time spent in milliseconds were very high, from 234839182.5-2934384210. This suggests that the data for time spent was very sparsly distributed, in other words each data point is often different from the other. This is also true for the amount of mouse movement distance, as the variance for both Version A and Version B are very high at 19773316.83 and 5665630.381, respectively.</p>
+        <p>Again, this high variance suggests that the data for mouse movement distance is highly distributed and that there is a wide range of data point values. The averages for mouse move distance were statistically significant, with p-value less than 0.05 and the average mouse move distance for Version A being around 6471 pixels and for Version B being around 2791 pixels.</p>
+        <p>The data for misclicks was converted from Booleans to 0 and 1 for False and True, respectively. Because of this, the variance was appropriate for Versions A and B at 0.201 and 0.068, respectively. These smaller variances mean that there is high similarities among the points, especially in Version B since the variance is very low. This may be because Version B had a significantly less amount of "True" entries for misclicks. Moreover, the averages for the occurance of misclicks followed a similar pattern, with the average of misclicks for Version A being 0.25086 and the average for Version B being 0.06878. Since the p-value is less than 0.05, this shows that there is a statistically significant decrease in misclicks in Version B compared to Version A.</p>
+    </section> 
         <h2>Conclusion</h2>
         <section id="Conclusions">
+            <p>In conclusion, statistics are very important for evaluating improvements and usability in websites, although they are definitely not the only evidence of the efficacy of a website. The type of statistical test is very important for obtaining a comprehensive understanding of the measured metrics and to appropriately assess the relationships between the measured metrics or the variables/versions of websites being compared.</p>
         </section> 
     </main>
 </body>

@@ -15,12 +15,13 @@
             <p>Below is the image of my modified Version B website. The colors of the buttons were changed and the spacing in between the date and the buttons in the scheduling column were decreased. Moreover, when buttons are hovered over, the buttons increase in size slightly.</p>
             <img src="btest.png" width="700" height="300">
         </section>
+        <h2>Hypotheses</h2>
         <section id="Hypotheses">
-            <h3>Misclick Rate</h3>
-            <p>Null Hypothesis: The misclick rate for Version B and Version A are not significantly different when compared to each other.</p>
-            <p>Alternative Hypothesis: The misclick rate for Version A is significantly higher than Version B.</p>
+            <h3>Misclick Occurance</h3>
+            <p>Null Hypothesis: The misclick occurance for Version B and Version A are not significantly different when compared to each other.</p>
+            <p>Alternative Hypothesis: The misclick occurance for Version A is significantly higher than Version B.</p>
             <p>Justification for alternative hypothesis: Since the buttons were made to have higher contrast and to have hover effects for enhanced indications of button selection, users should now find the website more readable and therefore should be able to complete the task more effectively. In other words, users should be able to complete the task with less misclicks.</p>
-            <p>Prediction: I predict that the misclick rate will decrease by a statistically significant amount due to the website improvements, which will lead my to reject the null hypothesis.</p>
+            <p>Prediction: I predict that the misclick occurance will decrease by a statistically significant amount due to the website improvements, which will lead my to reject the null hypothesis.</p>
             <h3>Time On Page</h3>
             <p>Null Hypothesis: The time spent on the page in milliseconds for Version B and Version A of the website are relatively the same, or not significantly different.</p>
             <p>Alternative Hypothesis: The time spent on Version B is much lower than the time spent on Version A.</p>
@@ -33,10 +34,36 @@
             <p>Justification for alternative hypothesis: Since the website's middle column, with the scheduling information and buttons, are less spaced apart, the user's eye doesn't have to search as far to read and find the correct appointment. Since the user's reading time is optimized and the buttons are easier to find, the mouse move distance should decrease since the user does not have to search as much to complete their task. In other words, the user should be more efficient which should lead to less time spent physically using the mouse to search for the right appointment.</p>
             <p>Prediction: I predict that the average mouse move distance for Version B will be lower by a statistically significant amount and will lead me to reject the null hypothesis.</p>
         </section> 
+        <h2>Statistical Tests</h2>
         <section id="Statistical Tests">
+            <h2>Misclicks</h2>
+            <h3>Reason for Type of Statistical Test</h3>
+            <p>Since we are mostly interested in the direction of the change of misclicks, in other words whether the misclick occurance increases or decreases, we can use a one-tailed t-test to evaluate this metric.</p>
+            <h3>Analysis</h3>
+            <p>The average misclicks per user trial for Version A is 0.260869, whereas the average misclicks per user trial for Version B is 0.071428. There is a significant decrease in misclick occurance from Version A to Version B. Since the p-value, which is 0.041329, is less than 0.05, we know that the difference we see between the misclicks for Version A and Version B is statistically significant.</p>
+            <p>This shows that there is substantial evidence for users experiencing less misclicks when using Version B compared to Version A</p>
+            <h3>Conclusion</h3>
+            <p>To conclude, I reject the null hypothesis that misclick occurance for Version B and Version A are not significantly different when compared to each other. Instead, I accept the alternative hypothesis as the evidence supports the alternative hypothesis.</p>
+            <h2>Time Spent On Page</h2>
+            <h3>Reason for Type of Statistical Test</h3>
+            <p>Since we are interested in the direction of the change of time spent on page, in other words whether the time spent increases or decreases, we can use a one-tailed t-test to evaluate this metric as we don't necessarily need exact differences between the two measurements being compared.</p>
+            <h3>Analysis</h3>
+            <p>The p-value is 0.41986, which is much greater than a p-value of 0.05, thus we know that any differences in measurements of time spent on Version A and Version B are not statistically significant. For example, the average time spent on Version A is 22,324 milliseconds, and for Version B it is 24,511 milliseconds. According to the high p-value, these two averages are not very different.</p>
+            <h3>Conclusion</h3>
+            <p>Since the change in average time spent on page for Version A and Version B are not statistically different, we fail to reject the null hypothesis.</p>
+            <h2>Mouse Move Distance</h2>
+            <h3>Reason for Type of Statistical Test</h3>
+            <p>We are interested in the specific/exact change of average mouse move distance on both page versions, so we need a two-tailed t-test to calculate and analyze the exact differences between the two measurements being compared.</p>
+            <h3>Analysis</h3>
+            <p>The average mouse move distance in pixels for Version A tests is 6471 pixels. The average mouse move distance in pixels for Version B tests is 2791 pixels. The p-value is 0.0011 which is less than 0.05, meaning that the difference in the average mouse movement distance is statistically different and provides evidence for user experience being impacted by the change from Version A to Version B.</p>
+            <h3>Conclusion</h3>
+            <p>In conclusion, we can reject the null hypothesis because there is a statistically significant difference between the average mouse move distances between the two versions of the website.</p>
         </section> 
+        <h2>Summary Statistics</h2>
         <section id="Summary Statistics">
+        <p></p>
         </section> 
+        <h2>Conclusion</h2>
         <section id="Conclusions">
         </section> 
     </main>
